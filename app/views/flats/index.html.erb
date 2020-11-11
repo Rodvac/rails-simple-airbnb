@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>All our flats (<%= Flat.count %>)</h1>
+  <% @flats.each do |flat| %>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title"><%= flat.name %></h5>
+        <p class="card-text"><%= flat.address %></p>
+        <a href="#" class="btn btn-primary">More info</a>
+      </div>
+    </div>
+  <% end %>
+</div>
